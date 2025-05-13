@@ -77,7 +77,11 @@ This makes it ideal for demonstrating data engineering pipelines involving compl
 
 The dataset was sourced from Kaggle and uploaded to GitHub for use via HTTP in Azure Data Factory.
 
-## Dataset Links
+## Dataset Link
 Link: https://www.kaggle.com/datasets/ukveteran/adventure-works
 
 ## Scripts for Project
+- [Python Notebook Transformation Script](Scripts/Transformation(SilverLayer).ipynb)
+- [Create External Tables](ScriptsExternalTables.sql)
+- [Create Views](Scripts/CreateViewsGold.sql)
+- [Create Schema](Scripts/CreateSchema.sql)
