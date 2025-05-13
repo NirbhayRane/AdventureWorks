@@ -83,5 +83,5 @@ Link: https://www.kaggle.com/datasets/ukveteran/adventure-works
 ## Scripts for Project
 - [Python Notebook Transformation Script](Scripts/Transformation(SilverLayer).ipynb)
 - [Create External Tables](ScriptsExternalTables.sql)
-- [Create Views](Scripts/CreateViewsGold.sql)
+- [Create Views Gold](Scripts/CreateViewsGold.sql)
 - [Create Schema](Scripts/CreateSchema.sql)
