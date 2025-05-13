@@ -81,7 +81,7 @@ The dataset was sourced from Kaggle and uploaded to GitHub for use via HTTP in A
 Link: https://www.kaggle.com/datasets/ukveteran/adventure-works
 
 ## Scripts for Project
-- [Python Notebook Transformation Script]()
+- [Python Notebook Transformation Script](Scripts/Transformation(SilverLayer).ipynb)
 - [Create External Tables](Scripts/ExternalTable.sql)
 - [Create Views Gold](Scripts/CreateViewsGold.sql)
 - [Create Schema](Scripts/CreateSchema.sql)
