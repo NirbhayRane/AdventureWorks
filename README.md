@@ -85,3 +85,9 @@ Link: https://www.kaggle.com/datasets/ukveteran/adventure-works
 - [Create External Tables](Scripts/ExternalTable.sql)
 - [Create Views Gold](Scripts/CreateViewsGold.sql)
 - [Create Schema](Scripts/CreateSchema.sql)
+
+
+## 🎯 Project Outcome
+Designed and implemented a scalable data pipeline using Azure services to process and transform raw business data. Delivered curated datasets in a structured format ready for analysis and reporting tools.
+
+
