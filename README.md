@@ -28,11 +28,11 @@ Gold Layer: Stores the final curated data used for analytics and reporting.
 ### 🧪 Azure Databricks
 Used for processing and transforming data using PySpark:
 
-Reads raw data from the Bronze layer.
+- Reads raw data from the Bronze layer.
 
-Applies necessary transformations.
+- Applies necessary transformations.
 
-Writes the cleaned data to the Silver layer.
+- Writes the cleaned data to the Silver layer.
 
 ### 🧠 Azure Synapse Analytics
 Connects to the Silver layer using storage account keys.
