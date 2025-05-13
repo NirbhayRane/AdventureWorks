@@ -5,3 +5,79 @@ This project demonstrates an end-to-end data engineering pipeline built on Micro
 
 ## Architecture Diagram
 ![Project Architecture](Architecture/ArchitectureDiagram.jpg)
+
+### 📂 Data Source (GitHub)
+The raw dataset is hosted on GitHub and accessed through a Raw URL.
+
+### ⚙️ Azure Data Factory (ADF)
+Azure Data Factory is used for data ingestion.
+
+It Fetches the dataset from GitHub using an HTTP linked service.
+
+Stores the data into the Bronze layer (raw) in Azure Data Lake Gen2 via a Data Lake linked service.
+
+### 🪣 Azure Data Lake Storage Gen2
+Azure Data Lake acts as the central storage layer using the medallion architecture:
+
+Bronze Layer: Contains raw data directly ingested from the source.
+
+Silver Layer: Holds cleaned and transformed data.
+
+Gold Layer: Stores the final curated data used for analytics and reporting.
+
+### 🧪 Azure Databricks
+Used for processing and transforming data using PySpark:
+
+Reads raw data from the Bronze layer.
+
+Applies necessary transformations.
+
+Writes the cleaned data to the Silver layer.
+
+### 🧠 Azure Synapse Analytics
+Connects to the Silver layer using storage account keys.
+
+Writes finalized data to the Gold layer for reporting.
+
+### 📊 Power BI
+Connects to the Gold layer to build interactive dashboards and visual reports, providing business insights from the curated data.
+
+
+## 🧰 Technologies Used
+- **GitHub** – Hosted raw dataset
+
+- **Azure Data Factory** – Data ingestion using linked services
+
+- **Azure Data Lake Storage Gen2** – Bronze, Silver, Gold architecture
+
+- **Azure Databricks** – Data transformation using PySpark
+
+- **Python** – Data processing and transformation
+
+- **Azure Synapse Analytics** – Querying using SQL
+
+- **Power BI** – Interactive dashboards and visualizations
+
+## 📊 Dataset Description
+This project uses the AdventureWorks dataset, a widely used sample database provided by Microsoft. It represents a fictional company, Adventure Works Cycles, which sells bicycles and related products globally.
+
+The dataset includes multiple related tables containing realistic business data such as:
+
+- Sales orders and transactions
+
+- Customer and employee information
+
+- Products and categories
+
+- Geographic and regional data
+
+- Shipping and purchasing details
+
+This makes it ideal for demonstrating data engineering pipelines involving complex relationships, transformations, and business intelligence reporting.
+
+The dataset was sourced from Kaggle and uploaded to GitHub for use via HTTP in Azure Data Factory.
+
+## Dataset Links
+Link: https://www.kaggle.com/datasets/ukveteran/adventure-works
+
+## Scripts for Project
